@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9rem;
+    color: #1D1D1F;
+    background-color: #d5d3d2;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #1D1D1F;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.logo {
+    max-width: 70px;
+}
+
+.container {
+    padding: 2rem 1.5rem;
+}
+
+.bd-grid {
+    max-width: 1390px;
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+section {
+    padding: 3.5rem 0;
+}
+
+.section-heading {
+    font-size: 3.1rem;
+    padding-top: 1.2rem;
+}
+
+.section-sub-heading {
+    font-size: 2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.heading {
+    font-size: 2.5rem;
+}
+
+.sub-heading {
+    font-size: 3.1rem;
+}
+
+.primary-cta {
+    background: #1D1D1F;
+    color: #FFF;
+    padding: 1rem 2.2rem;
+}
+
+.secondary-cta {
+    display: inline-block;
+    border-radius: .5rem;
+    background: #1D1D1F;
+    color: #FFF;
+    padding: .8rem 1.5rem;
+    transition: .5s ease-in-out;
+}
+
+.secondary-cta:hover {
+    background: #F9E4DB;
+    color: #1D1D1F;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    height: 4rem;
+    top: 0;
+    left: 0;
+    padding: .5rem 2rem;
+    z-index: 10000000;
+    background-color: #b00029;
+}
+
+.nav {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .nav_menu {
+        position: fixed;
+        top: 3.8rem;
+        left: 100%;
+        width: 100%;
+        height: 100vh;
+        padding: 3rem;
+        background-color: #b00029;
+        border: 2px solid black;
+        transition: 0.5s;
+    }
+}
+
+.nav_item {
+    margin-bottom: 2.3rem;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    border-bottom: 1px solid rgb(196, 192, 192);
+}
+
+.nav_item a {
+    color: white;
+}
+
+.nav_toggle {
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+}
+
+.show {
+    left: 0;
+}
+
+.hero {
+    background: #d5d3d2;
+    height: 100vh;
+}
+
+.hero .left-col {
+    padding-top: 2.5rem;
+}
+
+.hero .left-col .heading {
+    padding-bottom: .5rem;
+}
+
+.hero .left-col .sub-heading {
+    padding-bottom: .5rem;
+}
+
+.hero-img {
+    padding: 1.2rem;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+d.info .cards {
+    margin: 2.5rem 0;
+    cursor: pointer;
+    background-color: #b70428;
+}
+
+.info .cards .card {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.info .card:hover .card-body-text h1 {
+    color: #1D1D1F;
+}
+
+.info .cards .card-header {
+    background: #F9E4DB;
+    padding: 1rem;
+}
+
+.card-image {
+    max-width: 100px;
+    min-width: 100px;
+    padding: .5rem;
+}
+
+.info .cards .card-body {
+    background: #FCF9F7;
+    padding: 0 1.5rem;
+}
+
+.card-body-text h1 {
+    font-size: 3.1rem;
+    font-style: italic;
+    color: rgb(196, 192, 192);
+    font-family: 'MonteCarlo', cursive;
+}
+
+.info .cards .card-header {
+    display: flex;
+    justify-content: center;
+}
+
+.why-us {
+    background: #d5d3d2;
+}
+
+.why-us-box {
+    margin: 2rem 0;
+    padding: 2rem 0;
+}
+
+.why-us-content {
+    display: flex;
+    cursor: pointer;
+}
+
+.why-us-content .big-bike {
+    max-width: 400px;
+    background: none;
+    border-radius: 10%;
+    padding: .5rem;
+    margin: 2rem;
+}
+
+.why-us-text {
+    font-size: .8rem;
+    line-height: 1.5;
+    padding-right: 1.2rem;
+    flex-basis: 80%;
+}
+
+.why-us-text:nth-child(1) {
+    order: 2;
+    padding-left: 2rem;
+}
+
+.why-us-text p {
+    padding: .5rem 0;
+}
+
+.icons {
+    background: #FFF;
+    max-width: 100px;
+    max-height: 100px;
+    padding: 1.2rem;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.why-us-content .big-bike {
+    display: none;
+}
+
+.bike-list .card {
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.bike-list .card .card-header {
+    display: flex;
+    padding: 0 2.5rem;
+    align-items: center;
+}
+
+.bike-list .card .card-header img {
+    background: #d5d3d2;
+}
+
+.bike-list .card .card-text {
+    color: white;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    padding: 75px 20px 38px 20px;
+    border-radius: 20px;
+    background-color: #b70428;
+    margin: -50px 0px 0px 0px;
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        margin: 0;
+    }
+    .nav_list {
+        display: flex;
+    }
+    .nav_item {
+        margin-left: 3rem;
+        margin-bottom: 0;
+        border: none;
+        font-size: .9rem;
+    }
+    .nav_toggle {
+        display: none;
+    }
+    .hero {
+        display: flex;
+    }
+    .hero .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .info .container .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-column-gap: 3rem;
+    }
+    .bike-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 2rem;
+        margin: 5rem 0;
+    }
+    .why-us-list {
+        display: flex;
+        box-sizing: border-box;
+        padding: 1rem 0;
+        align-items: center;
+    }
+    .why-us-content {
+        padding: .2rem;
+    }
+    .why-us-content .big-bike {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bd-grid {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .hero-img {
+        max-width: 700px;
+    }
+    .info .cards .card {
+        display: flex;
+    }
+    .info .cards .card .card-header {
+        display: flex;
+        align-items: center;
+    }
+    .why-us-content .big-bike {
+        display: block;
+    }
+}

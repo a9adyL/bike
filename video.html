@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <title>Bike-rental</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .video-section video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #00000033;
+        }
+        
+        .table-section {
+            margin-bottom: 30px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #fff;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        tbody tr:hover {
+            background-color: #f9f9f9;
+        }
+        
+        .fa-check-circle {
+            color: #4CAF50;
+        }
+        
+        .fa-times-circle {
+            color: #F44336;
+        }
+        
+        @media (max-width: 768px) {
+            th,
+            td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav" id="nav">
+            <a href="index.html" style="font-size: 20px; font-weight: bold; color: white;"> Bike-rental</a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="info.html" class="nav_link">Rental Info</a></li>
+                    <li class="nav_item"><a href="pricing.html" class="nav_link">Pricing</a> </li>
+                    <li class="nav_item"><a href="why-us.html" class="nav_link">Why us</a></li>
+                    <li class="nav_item"><a href="contact.html" class="nav_link">Contact</a></li>
+                    <li class="nav_item"><a href="G-members.html" class="nav_link">G-Members</a></li>
+                    <li class="nav_item"><a href="video.html" class="nav_link">Video</a></li>
+
+                </ul>
+            </div>
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="fas fa-bars icon"></i>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="container" style="margin-top: 80px;">
+        <div class="video-section">
+            <video controls>
+            <source src="assets/images/video.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="table-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Brand</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mountain Bike</td>
+                        <td>Red Zoom</td>
+                        <td>$20/hour</td>
+                    </tr>
+                    <tr>
+                        <td>City Bike</td>
+                        <td>Fast Ride</td>
+                        <td>$15/hour</td>
+                    </tr>
+                    <tr>
+                        <td>Road Bike</td>
+                        <td>Easy Ride</td>
+                        <td>$25/hour</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
